@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Orange HRM]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="As1(failed)">
+    <classes>
+      <class name="Default.Page1">
+        <methods>
+          <include name="fetch"/>
+          <include name="admin"/>
+          <include name="admin"/>
+          <include name="admin1"/>
+        </methods>
+      </class> <!-- Default.Page1 -->
+      <class name="Default.Login">
+        <methods>
+          <include name="login"/>
+          <include name="open"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- Default.Login -->
+    </classes>
+  </test> <!-- As1(failed) -->
+</suite> <!-- Failed suite [Orange HRM] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AssignmentConfig">
+	<test name="Test1">
+		<classes>
+			<class name="AssignmentConfig.Login">
+				<methods>
+					<include name="open" />
+					<include name="login" />
+					<include name="after" />
+				</methods>
+			</class>
+			<class name="AssignmentConfig.Admin">
+				<methods>
+					<include name="admin" />
+					<include name="search" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Add user into OrangeHRM(failed)">
+    <parameter name="password" value="admin123"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="Yt.Play">
+        <methods>
+          <include name="loginOhrm"/>
+          <include name="afterClass"/>
+          <include name="invokeBrowser"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- Yt.Play -->
+      <class name="Yt.Search">
+        <methods>
+          <include name="editUser"/>
+          <include name="searchUser"/>
+          <include name="afterClass"/>
+          <include name="invokeBrowser"/>
+          <include name="clickAdmin"/>
+          <include name="beforeClass"/>
+          <include name="addUser"/>
+        </methods>
+      </class> <!-- Yt.Search -->
+    </classes>
+  </test> <!-- Add user into OrangeHRM(failed) -->
+</suite> <!-- Failed suite [OrangeHRM] -->

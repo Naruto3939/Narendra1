@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM">
+  <test name="Add user into OrangeHRM">
+      <parameter name="username" value="Admin"/>
+      <parameter name="password" value="admin123"/>
+      <classes>
+      <class name="Yt.Play">
+          <methods>
+            <include name= "invokeBrowser"/>
+           <include name= "loginOhrm"/>
+           </methods>
+       </class>    
+      <class name="Yt.Search">
+         <methods>
+            <include name= "clickAdmin"/>
+           <include name= "addUser"/>
+           <include name= "searchUser"/>
+           <include name= "editUser"/>
+           </methods>
+          </class>
+      </classes>
+      </test>
+      </suite>

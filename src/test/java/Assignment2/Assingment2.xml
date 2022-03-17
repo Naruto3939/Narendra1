@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Assingment2">
+	<test name="ClassTest">
+		<classes>
+			<class name="Assignment2.Amazon">
+				<methods>
+					<include name="login" />
+				</methods>
+			</class>
+			<class name="Assignment2.SearchAmazon">
+				<methods>
+					<include name="search" />
+				</methods>
+			</class>
+			<class name="Assignment2.AddToCart">
+				<methods>
+					<include name="add" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
